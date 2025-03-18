@@ -1,25 +1,25 @@
 <mxfile host="65bd71144e">
     <diagram id="cgQj5sj0VM-Bga6tmyxf" name="ページ1">
-        <mxGraphModel dx="838" dy="907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1174" dy="418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="対戦（開始）" style="html=1;" parent="1" vertex="1">
+                <mxCell id="2" value="Games" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="120" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="盤面" style="html=1;" parent="1" vertex="1">
+                <mxCell id="4" value="Board" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="520" y="200" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="石" style="html=1;" parent="1" vertex="1">
+                <mxCell id="5" value="Disc" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="680" y="320" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="対戦結果" style="html=1;" parent="1" vertex="1">
+                <mxCell id="6" value="Game_result" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="320" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="プレイヤー" style="html=1;" parent="1" vertex="1">
+                <mxCell id="7" value="Player" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="120" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="石の種類&lt;br&gt;・空&lt;br&gt;・黒&lt;br&gt;・白" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" parent="1" vertex="1">
+                <mxCell id="8" value="・Empty&lt;br&gt;・Black&lt;br&gt;・White" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" parent="1" vertex="1">
                     <mxGeometry x="840" y="280" width="80" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" value="" style="endArrow=none;dashed=1;html=1;" parent="1" source="8" target="5" edge="1">
@@ -40,7 +40,7 @@
                 <mxCell id="12" value="*" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" parent="10" connectable="0" vertex="1">
                     <mxGeometry x="1" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="ターン" style="html=1;" parent="1" vertex="1">
+                <mxCell id="16" value="Turns" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="359" y="120" width="110" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;" parent="1" source="2" target="16" edge="1">
@@ -67,7 +67,7 @@
                 <mxCell id="22" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" parent="20" connectable="0" vertex="1">
                     <mxGeometry x="1" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="マス目" style="html=1;" parent="1" vertex="1">
+                <mxCell id="23" value="Square" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="680" y="200" width="110" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="" style="endArrow=none;html=1;" parent="1" source="4" target="23" edge="1">
@@ -96,7 +96,7 @@
                 <mxCell id="29" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" parent="27" connectable="0" vertex="1">
                     <mxGeometry x="1" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="手" style="html=1;" parent="1" vertex="1">
+                <mxCell id="30" value="Move" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="520" y="40" width="110" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="31" value="" style="endArrow=none;html=1;" parent="1" source="16" target="30" edge="1">
@@ -110,15 +110,6 @@
                 </mxCell>
                 <mxCell id="33" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" parent="31" connectable="0" vertex="1">
                     <mxGeometry x="1" relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="34" value="どこにどんな石を置くか" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="680" y="80" width="100" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="35" value="" style="endArrow=none;dashed=1;html=1;" parent="1" source="34" target="30" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="80" y="140" as="sourcePoint"/>
-                        <mxPoint x="770" y="102.99999999999989" as="targetPoint"/>
-                    </mxGeometry>
                 </mxCell>
                 <mxCell id="36" value="" style="endArrow=none;html=1;" parent="1" source="2" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry">

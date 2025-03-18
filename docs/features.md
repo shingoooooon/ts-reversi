@@ -1,26 +1,29 @@
-# 機能一覧
+# Functions
 
-## ユースケースごとの機能一覧
+## List of functions
 
-- 「対戦する」ユースケース
-  - 対戦を開始する
-  - 現在の盤面を表示する
-  - 石を打つ
-  - 勝敗を確認する
-- 「自分の過去の対戦結果を確認する」ユースケース
-  - 自分の対戦結果を表示する
+- Game
+  - Start a game
+  - Show the current board
+  - Put a disc
+  - Check the winner
+- Check the past game results
+  - Show the past game results
 
-## 「石を打つ」機能について
+## About the "Put a stone" function
 
-- 内部には以下のような処理がありそう
-  - 選ばれた位置に石は打てるのかチェックする
-  - 石を打つ
-  - ひっくり返す
-  - 次はどちらの番か判断する
-    - ※打てない場合は自動でスキップする
-  - (勝敗が決まったら) 対戦を終了する
+- There are the following processes in the function
+  - Check if the selected position is valid
+  - Put a disc on the selected position
+  - Check the winner
 
-## プレイヤーについて
+## About the "Check the winner" function
 
-- プレイヤーの登録機能は設けない
-  - このアプリケーションは、自分の PC で立ち上げて、自分一人だけ遊べることにする
+- There are the following processes in the function
+  - Check the winner
+  - End the game
+
+## About the player
+
+- The player registration function is not provided
+  - This application is designed to be played by one person on your own PC

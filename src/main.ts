@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import "express-async-errors";
+import mysql from "mysql2/promise";
 
 const PORT = 3000;
 const app = express();
@@ -14,6 +15,29 @@ app.get("/api/hello", async (req, res) => {
 
 app.get("/api/error", async (req, res) => {
     throw new Error("test error");
+});
+
+app.post("/api/games", async (req, res) => {
+    const startedAt = new Date();
+    const connection = await mysql.createConnection({
+        host: "localhost",
+        user: "reversi",
+        password: "password",
+        database: "reversi",
+    });
+
+    try {
+        await connection.beginTransaction();
+
+        await connection.execute(
+            "INSERT INTO games (started_at) VALUES (?)",
+            [startedAt]
+        );
+
+        await connection.commit();
+    } finally {
+        connection.end();
+    }
 });
 
 app.use(ErrorHandler);
